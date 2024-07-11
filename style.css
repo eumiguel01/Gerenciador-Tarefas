@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: aliceblue;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    width: 100vw;
+    height: 5rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1Header {
+    font-size: 3rem;
+} @media (max-width: 700px) {
+    .h1Header {
+        font-size: 2rem;
+    }
+} @media (max-width: 400px) {
+    .h1Header {
+        font-size: 1.5rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.h2Main {
+    font-size: 2rem;
+    text-align: center;
+} @media (max-width: 700px) {
+    .h2Main {
+        font-size: 1.5rem;
+    }
+} @media (max-width: 400px) {
+    .h2Main {
+        font-size: 1rem;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.input {
+    border-radius: 10px;
+    outline: 2px solid #333;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.15s;
+} @media (max-width: 450px) {
+    .input {
+        padding: 0px 10px;
+    }
+} @media (max-width: 400px) {
+    .input {
+        padding: 10px 1rem;
+    }
+}
+  
+.input:focus {
+    outline-offset: 5px;
+    background-color: #fff;
+}
+
+.buttonTarefa {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    -webkit-user-select: none; /* Coloque isso antes */
+    user-select: none; /* Isso depois */
+    vertical-align: middle;
+    white-space: nowrap;
+} @media (max-width: 450px) {
+    .buttonTarefa {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+.buttonTarefa:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.buttonTarefa:focus {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
+.buttonTarefa:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.buttonTarefa:disabled {
+    cursor: auto;
+}
+
+.buttonTarefa:active:after {
+    border-width: 0 0 0px;
+}
+
+.buttonTarefa:active {
+    padding-bottom: 10px;
+}
+
+.spanEntrada {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+} @media (max-width: 400px) {
+    .spanEntrada {
+        flex-wrap: wrap;
+    }
+}
+
+.listaTarefas {
+    list-style-type: none;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: aliceblue;
+    border: solid 3px #333;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} @media (max-width: 400px) {
+    .listaTarefas {
+        padding: 1rem;
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+} @media (max-width: 1100px) {
+    .span {
+        gap: 10rem;
+    }
+} @media (max-width: 700px) {
+    .span {
+        gap: 5rem;
+    }
+} @media (max-width: 550px) {
+    .span {
+        gap: 2rem;
+    }
+} @media (max-width: 400px) {
+    .span {
+        gap: 0.1rem;
+    }
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark {
+    background-color: green;
+    box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  @keyframes checkAnim {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    animation: checkAnim 0.2s forwards;
+  }
+
+.buttonExcluir {
+    appearance: button;
+    background-color: rgb(180, 0, 0);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    -webkit-user-select: none; /* Coloque isso antes */
+    user-select: none; /* Isso depois */
+    vertical-align: middle;
+    white-space: nowrap;
+} @media (max-width: 550px) {
+    .buttonExcluir {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+.buttonExcluir:after {
+    background-clip: padding-box;
+    background-color: red;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.buttonExcluir:focus {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
+.buttonExcluir:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.buttonExcluir:disabled {
+    cursor: auto;
+}
+
+.buttonExcluir:active:after {
+    border-width: 0 0 0px;
+}
+
+.buttonExcluir:active {
+    padding-bottom: 10px;
+}
