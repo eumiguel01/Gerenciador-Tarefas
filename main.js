@@ -22,7 +22,6 @@ botao.addEventListener("click", () => {
         let tarefa = document.createElement("span");
         tarefa.textContent = valorAdicionar;
         tarefa.className = "tarefa";
-        tarefa.style.fontSize = "1.5rem";
 
         let span = document.createElement("span");
         span.className = "span";
