@@ -1,4 +1,4 @@
-<h1 align="center">PROJETO - Gerenciador de Tarefas 🐱</h1>
+<h1 align="center">PROJETO - Gerenciador de Tarefas 📝</h1>
 
 ## :memo: Descrição:
 Desenvolvi um gerenciador de tarefas para a web com HTML, CSS e JavaScript.
