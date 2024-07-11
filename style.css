@@ -20,6 +20,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+} @media (max-width: 500px) {
+    header {
+        height: 7rem;
+        padding-top: 2.5rem;
+    }
 }
 
 .h1Header {
