@@ -10,4 +10,4 @@ Desenvolvi um gerenciador de tarefas para a web com HTML, CSS e JavaScript.
 Completo!
 
 ## 📌 Link:
-<a href="https://eumiguel01.github.io/Gerenciador-Tarefas/">Gerenciador de Tarefas</a>
+<a href="https://gerenciador-tarefas-lac.vercel.app/">Gerenciador de Tarefas</a>
