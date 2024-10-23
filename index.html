@@ -3,35 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Lista de Tarefas</title>
 </head>
 <body>
     <header>
-        <h1 class="h1Header">
-            Gerenciador de Tarefas
-        </h1>
+       <h1 class="h1-header">Lista de Tarefas</h1> 
     </header>
 
     <main>
-        <h2 class="h2Main">
-            Bem vindo ao seu Gerenciador de Tarefas
-        </h2>
-
-        <section>
-            <form action="" class="form">
-                <span class="spanEntrada">
-                    <input type="text" class="input" id="adicionarTarefa" placeholder="Digite sua tarefa">
-                    <span id="spanBotaoAdicionar"></span>
-                </span>
+        <section class="adicionar-tarefa">
+            <h2 class="h2-main">Bem vindo(a) a sua Lista de Tarefas</h2>
+            <form action="#">
+                <input id="tarefa" type="text">
+                <label onclick="criar()" class="criar-tarefa">
+                    <img src="img/sinal-de-adicao.png" alt="">
+                </label>
             </form>
         </section>
 
+        <section id="lista">
+        </section>
+
         <section>
-            <ul class="listaTarefas" id="listaTarefas">
-            </ul>
+            <h2 class="h2-main">Tarefas Concluídas</h2>
+        </section>
+
+        <section id="tarefas-concluidas">
+            
         </section>
     </main>
-    <script src="main.js"></script>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

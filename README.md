@@ -1,4 +1,4 @@
-<h1 align="center">PROJETO - Gerenciador de Tarefas 📝</h1>
+<h1 align="center">PROJETO - Lista de Tarefas 📝</h1>
 
 ## :memo: Descrição:
 Desenvolvi um gerenciador de tarefas para a web com HTML, CSS e JavaScript.
@@ -10,4 +10,4 @@ Desenvolvi um gerenciador de tarefas para a web com HTML, CSS e JavaScript.
 Completo!
 
 ## 📌 Link:
-<a href="https://gerenciador-tarefas-lac.vercel.app/">Gerenciador de Tarefas</a>
+<a href="https://gerenciador-tarefas-lac.vercel.app/">Lista de Tarefas</a>
